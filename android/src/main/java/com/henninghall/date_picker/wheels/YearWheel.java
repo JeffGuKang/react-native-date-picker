@@ -26,7 +26,7 @@ public class YearWheel extends Wheel
 
         for (int i = 0; i <= max; ++i) {
             values.add(String.valueOf(startYear + i));
-            displayValues.add(String.valueOf(startYear + i));
+            displayValues.add(String.valueOf(startYear + i) + '년');
         }
 
         picker.setMaxValue(0);
@@ -63,6 +63,5 @@ public class YearWheel extends Wheel
     public String getFormatTemplate() {
         return "y";
     }
-
 }
 
